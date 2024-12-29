@@ -1,0 +1,188 @@
+table, tr, th, td {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    margin: auto;
+}
+h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+h2{
+    color: rgb(255, 44, 44);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    display: flexbox;
+}
+th, td {
+    font-family: monospace;
+    padding: 10px;
+    text-align: center;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 12px;
+    position: relative;
+}
+
+.btn-spotify:hover{
+    background-color: rgb(30, 215, 96);
+}
+
+.btn-spotify::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(30, 215, 96), white, black, rgb(30, 215, 96), white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.btn-w3:hover{
+    background-color: #04AA6D;
+}
+
+.btn-w3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #04AA6D, white, black, #04AA6D, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.btn-devdocs:hover{
+    background-color:#33373a;
+}
+
+.btn-devdocs::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #33373a, white, black, #33373a, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+.btn-htb:hover{
+    background-color: #9fef00;
+}
+
+.btn-htb::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #9fef00, white, black, #9fef00, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+
+.btn-webDev:hover{
+    background-color: #1a73e8;
+}
+
+.btn-webDev::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a73e8, white, black, #1a73e8, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+
+}
+
+.btn-exercism:hover{
+    background-color: #130b43;
+}
+
+.btn-exercism::before{
+
+    /*Malo*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #130b43, white, black, #130b43, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, white, black, red, white, black);
+    background-size: 400%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
